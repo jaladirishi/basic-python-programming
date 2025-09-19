@@ -1,0 +1,12 @@
+#product of all integers from m,n
+def product_of_integers(m,n):
+    if (m>n):
+        return -1 
+    product=1
+    for i in range(m,n+1):
+        product*=i
+    return product
+m=int(input("enter m"))
+n=int(input("enter n"))   
+result=product_of_integers(m,n)
+print(result)
