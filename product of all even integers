@@ -1,0 +1,18 @@
+# product of all even integers from m, n
+def product_of_even_integers(m, n):
+    if m > n:
+        return -1
+    product = 1
+    found = False
+    for i in range(m, n+1):
+        if i % 2 == 0:
+            product *= i
+            found = True
+    if found:
+        return product
+    else:
+        return "No even numbers in range."
+m = int(input("enter m: "))
+n = int(input("enter n: "))
+result = product_of_even_integers(m, n)
+print(result)
