@@ -14,8 +14,8 @@ if choice == 1:
     qty = int(input("Enter quantity of Tiffen items: "))
     price = 100 * qty
     print(f"Tiffen items - 100 rupees each")
-    print(f"Total quantity - {qty}")
-    print(f"Total price - {price}")
+    print(f"Total quantity:",qty)
+    print(f"Total price:",price)
 elif choice == 2:
     print("Lunch Meals - 150 rupees each")
 elif choice == 3:
