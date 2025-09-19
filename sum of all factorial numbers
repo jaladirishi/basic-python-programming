@@ -1,0 +1,19 @@
+# sum of all factorial numbers from m to n
+def factorial(x):
+    result = 1
+    for i in range(1, x+1):
+        result *= i
+    return result
+
+def sum_of_factorials(m, n):
+    if m > n:
+        return -1
+    total = 0
+    for i in range(m, n+1):
+        total += factorial(i)
+    return total
+
+m = int(input("enter m: "))
+n = int(input("enter n: "))
+result = sum_of_factorials(m, n)
+print(result)
